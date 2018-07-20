@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:layout_marginTop="15dp"
+            android:text="常用元素周期表"
+            android:textAlignment="center"
+            android:textSize="35dp"
+            android:textStyle="bold"
+            android:textColor="#000"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:singleLine="true"
+            android:scrollHorizontally="true"
+            android:focusableInTouchMode="true"
+            android:focusable="true"
+            />
+    </LinearLayout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/MLOut"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="visible"
+        android:weightSum="1"
+        android:padding="20dp"
+        android:layout_marginTop="90dp"
+        >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="元素序号是："
+                android:textSize="25dp"
+                android:id="@+id/TitleText"
+                android:ellipsize="marquee"
+                android:marqueeRepeatLimit="marquee_forever"
+                android:scrollHorizontally="true"
+                android:singleLine="true"/>
+            <Button
+                android:id="@+id/or_number"
+                android:layout_width="wrap_content"
+
+                android:layout_height="wrap_content"
+                android:text="元素序号"
+                android:textSize="25dp"
+                android:visibility="visible" />
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="元素名称是："
+                android:textSize="25dp"/>
+            <Button
+                android:id="@+id/or_name_english"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAllCaps="false"
+                android:text="元素名称"
+                android:textSize="25dp"
+                android:visibility="visible"
+                android:weightSum="1" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="元素英文是："
+                android:textSize="25dp"
+                />
+            <Button
+                android:id="@+id/or_name_chinese"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAllCaps="false"
+                android:text="元素英文"
+                android:textSize="25dp"
+                android:visibility="visible"
+                android:weightSum="1" />
+        </LinearLayout>
+
+
+
+
+
+    </LinearLayout>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/or_refresh"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginBottom="52dp"
+        android:layout_marginEnd="44dp"
+        android:src="@drawable/baseline_refresh_black_18dp2"
+        android:text="重新生成"
+        android:textSize="25dp"
+        android:visibility="visible"
+        android:weightSum="1"
+        app:fabSize="normal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+
+
+
+</android.support.constraint.ConstraintLayout>
+

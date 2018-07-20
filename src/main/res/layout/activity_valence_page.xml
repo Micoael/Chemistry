@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ValencePage">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:layout_marginTop="15dp"
+                android:text="常用元素化合价"
+                android:textAlignment="center"
+                android:textSize="35dp"
+                android:textStyle="bold"
+                android:textColor="#000"
+                android:marqueeRepeatLimit="marquee_forever"
+                android:singleLine="true"
+                android:scrollHorizontally="true"
+                android:focusableInTouchMode="true"
+                android:focusable="true"/>
+        </LinearLayout>
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/MLOut"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:visibility="visible"
+            android:weightSum="1"
+            android:padding="20dp"
+            android:layout_marginTop="90dp"
+            >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="元素中文是："
+                    android:textSize="25sp"
+                    android:id="@+id/TitleText"
+                    android:ellipsize="marquee"
+                    android:marqueeRepeatLimit="marquee_forever"
+                    android:scrollHorizontally="true"
+                    android:singleLine="true"/>
+                <Button
+                    android:id="@+id/or_chinese"
+                    android:layout_width="wrap_content"
+
+                    android:layout_height="wrap_content"
+                    android:text="元素中文"
+                    android:textSize="25dp"
+                    android:visibility="visible" />
+
+
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="元素符号是："
+                    android:textSize="25dp"/>
+                <Button
+                    android:id="@+id/or_symbol"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAllCaps="false"
+                    android:text="元素符号"
+                    android:textSize="25dp"
+                    android:visibility="visible"
+                    android:weightSum="1" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="元素化合价是："
+                    android:textSize="25dp"
+                    />
+                <Button
+                    android:id="@+id/or_valence"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAllCaps="false"
+                    android:text="化合价"
+                    android:textSize="25dp"
+                    android:visibility="visible"
+                    android:weightSum="1" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/refresh_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="44dp"
+        android:layout_marginEnd="28dp"
+        android:src="@drawable/baseline_refresh_black_18dp2"
+        app:fabSize="normal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/switch_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="44dp"
+        android:layout_marginStart="24dp"
+        android:src="@drawable/ic_assignment_returned_black_18dp"
+        app:fabSize="normal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+
+</android.support.constraint.ConstraintLayout>
