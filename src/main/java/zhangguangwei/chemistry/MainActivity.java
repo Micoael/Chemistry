@@ -16,6 +16,8 @@ import android.view.MenuItem;
 import android.widget.Button;
 import android.widget.Toast;
 
+import zhangguangwei.chemistry.main_GridView.GridViewHome;
+
 public class MainActivity extends AppCompatActivity {
 
     private Button To_Vanlance_Btn,To_Symbol_Btn,To_Announcement_Btn,To_Combin_Btn,To_General_Name,To_Equals;
@@ -77,9 +79,9 @@ public class MainActivity extends AppCompatActivity {
         To_Equals.setOnClickListener(new Button.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(MainActivity.this,"都告诉你了，没有什么用." +
-                        "dev - logcat",Toast.LENGTH_LONG).show();
-                makeNotifations();
+                Intent intent = new Intent();
+                intent.setClass(MainActivity.this, GridViewHome.class);
+                startActivity(intent);
             }
         });
 
@@ -89,16 +91,6 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-    public void makeNotifations(){
-        Notification.Builder builder = new Notification.Builder(MainActivity.this);
-        builder.setTicker("World");
-        builder.setWhen(System.currentTimeMillis());
-        builder.setContentTitle("你好！");
-        builder.setContentText("不出所料，你点击了这个");
 
-
-        Notification notification = builder.build();//4.1以上用.build();
-        notification.flags |= Notification.FLAG_AUTO_CANCEL;// 点击通知的时候cancel掉
-    }
 
 }
