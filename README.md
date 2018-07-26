@@ -1,3 +1,3 @@
 # Chemistry
-Chemistry App
+Chemistry App\n
 Asks you more about Chemistry
