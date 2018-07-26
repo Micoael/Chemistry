@@ -9,4 +9,4 @@ ChangeLog
 - Update MainPage View
 - Update some new features
  - Combination
- - General Name and scrool bar
+ - General Name and bars
